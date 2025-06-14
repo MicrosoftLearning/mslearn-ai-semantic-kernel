@@ -98,7 +98,7 @@ Now that you deployed a model, you're ready to create a Semantic Kernel client a
 
     ```
     dotnet add package Microsoft.SemanticKernel
-    dotnet add package Microsoft.SemanticKernel.PromptTemplates.Handlebars;
+    dotnet add package Microsoft.SemanticKernel.PromptTemplates.Handlebars
     ```
 
 1. Enter the following command to edit the configuration file that has been provided:
@@ -256,7 +256,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
 
     **Python**
     ```python
-    # Render the Semanitc Kernel prompt with arguments
+    # Render the Semantic Kernel prompt with arguments
     sk_rendered_prompt = await sk_prompt_template.render(
         kernel,
         KernelArguments(
@@ -268,7 +268,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
 
     **C#**
     ```c#
-    // Render the Semanitc Kernel prompt with arguments
+    // Render the Semantic Kernel prompt with arguments
     var skRenderedPrompt = await skPromptTemplate.RenderAsync(
         kernel,
         new KernelArguments

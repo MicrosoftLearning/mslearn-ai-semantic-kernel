@@ -23,7 +23,7 @@ string deploymentName = config["DEPLOYMENT_NAME"]!;
 // Create a semantic kernel prompt template
 
 
-// Render the prompt with arguments
+// Render the Semantic Kernel prompt with arguments
 
 
 // Add the Semanitc Kernel prompt to the chat history and get the reply
