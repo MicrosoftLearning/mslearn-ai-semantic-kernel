@@ -359,7 +359,7 @@ Now you configure your kernel so that only selected functions are available to a
 
     PromptExecutionSettings openAIPromptExecutionSettings = new() 
     {
-        FunctionChoiceBehavior = FunctionChoiceBehavior.Required(functions: [search_flights]) 
+        FunctionChoiceBehavior = FunctionChoiceBehavior.Required(functions: [searchFlights]) 
     };
     ```
 
