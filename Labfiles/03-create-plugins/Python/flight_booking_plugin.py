@@ -21,7 +21,7 @@ class FlightBookingPlugin:
         self.flights: List[FlightModel] = self.load_flights_from_file()
 
 
-    # Create a plugin functiion with kernel function attributes
+    # Create a plugin function with kernel function attributes
 
 
     # Create a kernel function to book flights

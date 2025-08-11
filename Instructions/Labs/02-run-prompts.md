@@ -252,7 +252,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
     ));
     ```
 
-1. Add the following code under the comment **Render the Semanitc Kernel prompt with arguments**:
+1. Add the following code under the comment **Render the Semantic Kernel prompt with arguments**:
 
     **Python**
     ```python
@@ -283,14 +283,14 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
 
     **Python**
     ```python
-    # Add the Semanitc Kernel prompt to the chat history and get the reply
+    # Add the Semantic Kernel prompt to the chat history and get the reply
     chat_history.add_user_message(sk_rendered_prompt)
     await get_reply()
     ```
 
     **C#**
     ```c#
-    // Add the Semanitc Kernel prompt to the chat history and get the reply
+    // Add the Semantic Kernel prompt to the chat history and get the reply
     chatHistory.AddUserMessage(skRenderedPrompt);
     await GetReply();
     ```
