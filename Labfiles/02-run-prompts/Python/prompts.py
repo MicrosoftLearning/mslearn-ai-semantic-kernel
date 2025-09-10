@@ -28,10 +28,10 @@ async def main():
     # Create a semantic kernel prompt template
     
 
-    # Render the Semanitc Kernel prompt with arguments
+    # Render the Semantic Kernel prompt with arguments
     
 
-    # Add the Semanitc Kernel prompt to the chat history and get the reply
+    # Add the Semantic Kernel prompt to the chat history and get the reply
     
 
     # Create a handlebars template
