@@ -225,7 +225,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
             "estimatedSalaryRange": ""
             }
 
-            My skills are: \{\{$skills\}\}. My interests are: \{\{$interests\}\}. What are some roles that would be suitable for me?
+            My skills are: {{skills}}. My interests are: {{interests}}. What are some roles that would be suitable for me?
             """,
             name="recommend_roles_prompt",
             template_format="semantic-kernel",
@@ -250,7 +250,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
         "estimatedSalaryRange": ""
         }
 
-        My skills are: \{\{$skills\}\}. My interests are: \{\{$interests\}\}. What are some roles that would be suitable for me?
+        My skills are: {{skills}}. My interests are: {{interests}}. What are some roles that would be suitable for me?
         """
     ));
     ```
@@ -316,8 +316,8 @@ Now you create a prompt that identifies the user's missing skills for a role and
             Instructions: You are a career advisor. Analyze the skill gap between 
             the user's current skills and the requirements of the target role.
             </message>
-            <message role="user">Target Role: \{\{targetRole\}\}</message>
-            <message role="user">Current Skills: \{\{currentSkills\}\}</message>
+            <message role="user">Target Role: {{targetRole}}</message>
+            <message role="user">Current Skills: {{currentSkills}}</message>
 
             <message role="assistant">
             "Skill Gap Analysis":
@@ -349,8 +349,8 @@ Now you create a prompt that identifies the user's missing skills for a role and
                 Instructions: You are a career advisor. Analyze the skill gap between 
                 the user's current skills and the requirements of the target role.
                 </message>
-                <message role="user">Target Role: \{\{targetRole\}\}</message>
-                <message role="user">Current Skills: \{\{currentSkills\}\}</message>
+                <message role="user">Target Role: {{targetRole}}</message>
+                <message role="user">Current Skills: {{currentSkills}}</message>
 
                 <message role="assistant">
                 "Skill Gap Analysis":

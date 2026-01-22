@@ -280,11 +280,12 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
 1. Add the following code under the comment `Create a kernel function to deploy the staging environment`
 
      **Python**
+    {% raw %}
     ```python
     # Create a kernel function to deploy the staging environment
     deploy_stage_function = KernelFunctionFromPrompt(
         prompt="""This is the most recent build log:
-        \{\{DevopsPlugin.ReadLogFile\}\}
+        {{DevopsPlugin.ReadLogFile}}
 
         If there are errors, do not deploy the stage environment. Otherwise, invoke the stage deployment function""",
         function_name="DeployStageEnvironment",
@@ -293,13 +294,15 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
 
     kernel.add_function(plugin_name="DeployStageEnvironment", function=deploy_stage_function)
     ```
+    {% endraw %}
 
     **C#**
+    {% raw %}
     ```c#
     // Create a kernel function to deploy the staging environment
     var deployStageFunction = kernel.CreateFunctionFromPrompt(
     promptTemplate: @"This is the most recent build log:
-    \{\{DevopsPlugin.ReadLogFile\}\}
+    {{DevopsPlugin.ReadLogFile}}
 
     If there are errors, do not deploy the stage environment. Otherwise, invoke the stage deployment function",
     functionName: "DeployStageEnvironment",
@@ -308,6 +311,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
 
     kernel.Plugins.AddFromFunctions("DeployStageEnvironment", [deployStageFunction]);
     ```
+    {% endraw %}
 
 1. Use the **CTRL+S** command to save your changes to the code file.
 
@@ -338,26 +342,30 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
 1. Add the following code under the comment **Create a handlebars prompt**:
 
     **Python**
+    {% raw %}
     ```python
     # Create a handlebars prompt
     hb_prompt = """<message role="system">Instructions: Before creating a new branch for a user, request the new branch name and base branch name/message>
         <message role="user">Can you create a new branch?</message>
         <message role="assistant">Sure, what would you like to name your branch? And which base branch would you like to use?</message>
-        <message role="user">\{\{input\}\}</message>
+        <message role="user">{{input}}</message>
         <message role="assistant">"""
     ```
+    {% endraw %}
 
     **C#**
+    {% raw %}
     ```c#
     // Create a handlebars prompt
     string hbprompt = """
         <message role="system">Instructions: Before creating a new branch for a user, request the new branch name and base branch name/message>
         <message role="user">Can you create a new branch?</message>
         <message role="assistant">Sure, what would you like to name your branch? And which base branch would you like to use?</message>
-        <message role="user">\{\{input\}\}</message>
+        <message role="user">{{input}}</message>
         <message role="assistant">
         """;
     ```
+    {% endraw %}
 
     In this code, you create a few-shot prompt using the Handlebars template format. The prompt will guide the model to retrieve more information from the user before creating a new branch.
 
