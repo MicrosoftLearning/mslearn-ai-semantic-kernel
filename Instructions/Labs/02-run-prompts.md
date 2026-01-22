@@ -210,6 +210,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
 1. Locae the comment **Create a semantic kernel prompt template** and add the following code:
 
     **Python**
+    {% raw %}
     ```python
     # Create a semantic kernel prompt template
     sk_prompt_template = KernelPromptTemplate(
@@ -231,8 +232,10 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
         )
     )
     ```
+    {% endraw %}
 
     **C#**
+    {% raw %}
     ```c#
     // Create a semantic kernel prompt template
     var skTemplateFactory = new KernelPromptTemplateFactory();
@@ -251,6 +254,7 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
         """
     ));
     ```
+    {% endraw %}
 
 1. Add the following code under the comment **Render the Semantic Kernel prompt with arguments**:
 
@@ -302,6 +306,7 @@ Now you create a prompt that identifies the user's missing skills for a role and
 1. Add the following code under the comment **Create a handlebars template**
 
     **Python**
+    {% raw %}
     ```python
     # Create a handlebars template
     hb_prompt_template = HandlebarsPromptTemplate(
@@ -328,8 +333,10 @@ Now you create a prompt that identifies the user's missing skills for a role and
         )
     )
     ```
+    {% endraw %}
 
     **C#**
+    {% raw %}
     ```c#
     // Create a handlebars template
     var hbTemplateFactory = new HandlebarsPromptTemplateFactory();
@@ -357,6 +364,7 @@ Now you create a prompt that identifies the user's missing skills for a role and
         }
     );
     ```
+    {% endraw %}
 
 
 1. Add the following code under the comment **Render the Handlebars prompt with arguments**:
