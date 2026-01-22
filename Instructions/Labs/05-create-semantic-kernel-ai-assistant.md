@@ -284,7 +284,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
     # Create a kernel function to deploy the staging environment
     deploy_stage_function = KernelFunctionFromPrompt(
         prompt="""This is the most recent build log:
-        {{DevopsPlugin.ReadLogFile}}
+        \{\{DevopsPlugin.ReadLogFile\}\}
 
         If there are errors, do not deploy the stage environment. Otherwise, invoke the stage deployment function""",
         function_name="DeployStageEnvironment",
@@ -299,7 +299,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
     // Create a kernel function to deploy the staging environment
     var deployStageFunction = kernel.CreateFunctionFromPrompt(
     promptTemplate: @"This is the most recent build log:
-    {{DevopsPlugin.ReadLogFile}}
+    \{\{DevopsPlugin.ReadLogFile\}\}
 
     If there are errors, do not deploy the stage environment. Otherwise, invoke the stage deployment function",
     functionName: "DeployStageEnvironment",
@@ -343,7 +343,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
     hb_prompt = """<message role="system">Instructions: Before creating a new branch for a user, request the new branch name and base branch name/message>
         <message role="user">Can you create a new branch?</message>
         <message role="assistant">Sure, what would you like to name your branch? And which base branch would you like to use?</message>
-        <message role="user">{{input}}</message>
+        <message role="user">\{\{input\}\}</message>
         <message role="assistant">"""
     ```
 
@@ -354,7 +354,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
         <message role="system">Instructions: Before creating a new branch for a user, request the new branch name and base branch name/message>
         <message role="user">Can you create a new branch?</message>
         <message role="assistant">Sure, what would you like to name your branch? And which base branch would you like to use?</message>
-        <message role="user">{{input}}</message>
+        <message role="user">\{\{input\}\}</message>
         <message role="assistant">
         """;
     ```

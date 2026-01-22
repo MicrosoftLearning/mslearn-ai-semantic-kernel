@@ -7,6 +7,12 @@
 *.o
 *.obj
 
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+
 # Precompiled Headers
 *.gch
 *.pch
