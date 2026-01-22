@@ -201,8 +201,19 @@ Now you create a prompt template that instructs the AI to suggest suitable roles
         chatHistory,
         kernel: kernel
     );
-    Console.WriteLine("Assistant: " + reply.ToString());
-    chatHistory.AddAssistantMessage(reply.ToString());
+
+    var content = reply.FirstOrDefault()?.Content;
+
+    if (string.IsNullOrWhiteSpace(content))
+    {
+        Console.WriteLine("Assistant: [No reply]");
+    }
+    else
+    {
+        Console.WriteLine($"Assistant: {content}");
+
+        chatHistory.AddAssistantMessage(content);
+    }
     ```
 
     This code retrieves the reply from the LLM, outputs it to the console, and appends it to the chat history.
