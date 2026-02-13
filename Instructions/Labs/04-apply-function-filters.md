@@ -154,10 +154,16 @@ In this task, you add a filter function that will request the user's approval be
 1. Add the following code under the comment **Implement the function invocation method**
 
     **Python**
+    Add the import `from semantic_kernel.functions import FunctionResult`.
+    
     ```python
     # Implement the function invocation method
     if not has_user_permission(context.function.plugin_name, context.function.name):
-        context.result = "The operation was not approved by the user"
+        context.result = FunctionResult(
+            function=context.function.metadata,  # pass KernelFunctionMetadata, not the function itself
+            value="The operation was not approved by the user",
+            metadata={}
+        )
         return
     
     await next(context)
