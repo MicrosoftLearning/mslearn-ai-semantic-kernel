@@ -1,7 +1,10 @@
 ---
 lab:
-    title: 'Run prompts with Semantic Kernel'
-    description: 'Learn how to use prompt templates with Semantic Kernel.'
+  title: Run prompts with Semantic Kernel
+  description: Learn how to use prompt templates with Semantic Kernel.
+  duration: 15 minutes
+  level: 300
+  islab: true
 ---
 
 # Run prompts with Semantic Kernel
