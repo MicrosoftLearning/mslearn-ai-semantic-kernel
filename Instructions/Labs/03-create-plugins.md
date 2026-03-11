@@ -1,7 +1,10 @@
 ---
 lab:
-    title: 'Create Semantic Kernel plugins'
-    description: 'Learn how to build an AI flight booking assistant.'
+  title: Create Semantic Kernel plugins
+  description: Learn how to build an AI flight booking assistant.
+  duration: 15 minutes
+  level: 300
+  islab: true
 ---
 
 # Create Semantic Kernel plugins
