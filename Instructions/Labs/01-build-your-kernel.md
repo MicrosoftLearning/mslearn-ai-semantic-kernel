@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Build a Semantic Kernel object'
-    description: 'Learn how to build a kernel object that can connect to an AI model and run prompts.'
+  title: Build a Semantic Kernel object
+  description: Learn how to build a kernel object that can connect to an AI model
+    and run prompts.
+  duration: 10 minutes
+  level: 300
+  islab: true
 ---
 
 # Build a Semantic Kernel object
