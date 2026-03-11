@@ -1,7 +1,11 @@
 ---
 lab:
-    title: 'Create an AI Assistant with Semantic Kernel'
-    description: 'Learn how to use Semantic Kernel to build a generative AI assistant that can perform DevOps tasks.'
+  title: Create an AI Assistant with Semantic Kernel
+  description: Learn how to use Semantic Kernel to build a generative AI assistant
+    that can perform DevOps tasks.
+  duration: 30 minutes
+  level: 400
+  islab: true
 ---
 
 # Create an AI Assistant with Semantic Kernel
