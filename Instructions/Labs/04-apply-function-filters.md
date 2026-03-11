@@ -1,7 +1,10 @@
 ---
 lab:
-    title: 'Apply filters on functions'
-    description: 'Learn how to apply filters on functions with Semantic Kernel.'
+  title: Apply filters on functions
+  description: Learn how to apply filters on functions with Semantic Kernel.
+  duration: 10 minutes
+  level: 200
+  islab: true
 ---
 
 # Apply filters on functions
