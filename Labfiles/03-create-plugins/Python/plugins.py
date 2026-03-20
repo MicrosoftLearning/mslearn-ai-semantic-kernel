@@ -20,7 +20,8 @@ async def main():
     chat_completion = AzureChatCompletion(
         api_key=api_key,
         endpoint=endpoint,
-        deployment_name=deployment_name
+        deployment_name=deployment_name,
+        api_version="2024-12-01-preview" #update this accordingly
     )
     kernel.add_service(chat_completion)
 
