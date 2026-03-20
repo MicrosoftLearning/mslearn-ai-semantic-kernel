@@ -146,6 +146,7 @@ Now that you deployed a model, you can use the Semantic Kernel SDK to create a c
         api_key=api_key,
         endpoint=endpoint,
         deployment_name=deployment_name
+        api_vesion="2024-12-01-preview" #update this accordingly
     )
     kernel.add_service(chat_completion)
     ```
